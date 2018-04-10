@@ -1,0 +1,9 @@
+{
+  "name": "learn-docker-getting-started",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "docker build -t friendlyhello .",
+    "start": "docker run -p 4000:80 friendlyhello",
+    "start:detatched": "docker run -d -p 4000:80 friendlyhello"
+  }
+}
