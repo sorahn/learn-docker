@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "scripts": {
     "build": "docker build -t friendlyhello .",
+    "push": "docker push sorahn/getting-started:part2",
+    "stack:deploy": "docker stack deploy -c docker-compose.yml getstartedlab",
+    "stack:rm": " docker stack rm getstartedlab",
+    "start:detatched": "docker run -d -p 4000:80 friendlyhello",
     "start": "docker run -p 4000:80 friendlyhello",
-    "start:detatched": "docker run -d -p 4000:80 friendlyhello"
+    "tag": "docker tag friendlyhello sorahn/getting-started:part2"
   }
 }
